@@ -10,7 +10,7 @@
 	<div id="slides" class="cover-slides">
 		<ul class="slides-container">
 			<li class="text-left">
-				<img src="<c:url value="templateUser/images/slider-01.jpg"/>" alt="">
+				<img src="<c:url value="/template/templateUser/images/slider-01.jpg"/>" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -23,7 +23,7 @@
 				</div>
 			</li>
 			<li class="text-left">
-				<img src="<c:url value="templateUser/images/slider-02.jpg"/>" alt="">
+				<img src="<c:url value="/template/templateUser/images/slider-02.jpg"/>" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -36,7 +36,7 @@
 				</div>
 			</li>
 			<li class="text-left">
-				<img src="<c:url value="templateUser/images/slider-03.jpg"/>" alt="">
+				<img src="<c:url value="/template/templateUser/images/slider-03.jpg"/>" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -70,7 +70,7 @@
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12">
-					<img src="<c:url value="templateUser/images/about-img.jpg"/>" alt="" class="img-fluid">
+					<img src="<c:url value="/template/templateUser/images/about-img.jpg"/>" alt="" class="img-fluid">
 				</div>
 			</div>
 		</div>
@@ -120,7 +120,7 @@
 							<div class="row">
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-01.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-01.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Drinks 1</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -131,7 +131,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-02.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-02.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Drinks 2</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -142,7 +142,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-03.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-03.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Drinks 3</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -153,7 +153,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid lunch">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-04.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-04.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Lunch 1</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -164,7 +164,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid lunch">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-05.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-05.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Lunch 2</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -175,7 +175,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid lunch">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-06.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-06.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Lunch 3</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -186,7 +186,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-07.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-07.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Dinner 1</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -197,7 +197,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-08.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-08.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Dinner 2</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -208,7 +208,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-09.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-09.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Dinner 3</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -223,7 +223,7 @@
 							<div class="row">
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-01.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-01.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Drinks 1</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -234,7 +234,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-02.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-02.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Drinks 2</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -245,7 +245,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-03.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-03.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Drinks 3</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -260,7 +260,7 @@
 							<div class="row">
 								<div class="col-lg-4 col-md-6 special-grid lunch">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-04.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-04.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Lunch 1</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -271,7 +271,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid lunch">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-05.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-05.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Lunch 2</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -282,7 +282,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid lunch">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-06.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-06.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Lunch 3</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -296,7 +296,7 @@
 							<div class="row">
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-07.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-07.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Dinner 1</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -307,7 +307,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-08.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-08.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Dinner 2</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -318,7 +318,7 @@
 								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
-										<img src="<c:url value="templateUser/images/img-09.jpg"/>" class="img-fluid" alt="Image">
+										<img src="<c:url value="/template/templateUser/images/img-09.jpg"/>" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Special Dinner 3</h4>
 											<p>Sed id magna vitae eros sagittis euismod.</p>
@@ -350,33 +350,33 @@
 			<div class="tz-gallery">
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4">
-						<a class="lightbox" href="<c:url value="templateUser/images/gallery-img-01.jpg"/>">
-							<img class="img-fluid" src="<c:url value="templateUser/images/gallery-img-01.jpg"/>" alt="Gallery Images">
+						<a class="lightbox" href="<c:url value="/template/templateUser/images/gallery-img-01.jpg"/>">
+							<img class="img-fluid" src="<c:url value="/template/templateUser/images/gallery-img-01.jpg"/>" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="<c:url value="templateUser/images/gallery-img-02.jpg"/>">
-							<img class="img-fluid" src="<c:url value="templateUser/images/gallery-img-02.jpg"/>" alt="Gallery Images">
+						<a class="lightbox" href="<c:url value="/template/templateUser/images/gallery-img-02.jpg"/>">
+							<img class="img-fluid" src="<c:url value="/template/templateUser/images/gallery-img-02.jpg"/>" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="<c:url value="templateUser/images/gallery-img-03.jpg"/>">
-							<img class="img-fluid" src="<c:url value="templateUser/images/gallery-img-03.jpg"/>" alt="Gallery Images">
+						<a class="lightbox" href="<c:url value="/template/templateUser/images/gallery-img-03.jpg"/>">
+							<img class="img-fluid" src="<c:url value="/template/templateUser/images/gallery-img-03.jpg"/>" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4">
-						<a class="lightbox" href="<c:url value="templateUser/images/gallery-img-04.jpg"/>">
-							<img class="img-fluid" src="<c:url value="templateUser/images/gallery-img-04.jpg"/>" alt="Gallery Images">
+						<a class="lightbox" href="<c:url value="/template/templateUser/images/gallery-img-04.jpg"/>">
+							<img class="img-fluid" src="<c:url value="/template/templateUser/images/gallery-img-04.jpg"/>" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="<c:url value="templateUser/images/gallery-img-05.jpg"/>">
+						<a class="lightbox" href="<c:url value="/template/templateUser/images/gallery-img-05.jpg"/>">
 							<img class="img-fluid" src="<c:url value="templateUser/images/gallery-img-05.jpg"/>" alt="Gallery Images">
 						</a>
 					</div> 
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="<c:url value="templateUser/images/gallery-img-06.jpg"/>">
-							<img class="img-fluid" src="<c:url value="templateUser/images/gallery-img-06.jpg"/>" alt="Gallery Images">
+						<a class="lightbox" href="<c:url value="/template/templateUser/images/gallery-img-06.jpg"/>">
+							<img class="img-fluid" src="<c:url value="/template/templateUser/images/gallery-img-06.jpg"/>" alt="Gallery Images">
 						</a>
 					</div>
 				</div>
@@ -402,7 +402,7 @@
 						<div class="carousel-inner mt-4">
 							<div class="carousel-item text-center active">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="<c:url value="templateUser/images/quotations-button.png"/>" alt="">
+									<img class="d-block w-100 rounded-circle" src="<c:url value="/template/templateUser/images/quotations-button.png"/>" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Paul Mitchel</strong></h5>
 								<h6 class="text-dark m-0">Web Developer</h6>
@@ -410,7 +410,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="<c:url value="templateUser/images/quotations-button.png"/>" alt="">
+									<img class="d-block w-100 rounded-circle" src="<c:url value="/template/templateUser/images/quotations-button.png"/>" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Steve Fonsi</strong></h5>
 								<h6 class="text-dark m-0">Web Designer</h6>
@@ -418,7 +418,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="<c:url value="templateUser/images/quotations-button.png"/>" alt="">
+									<img class="d-block w-100 rounded-circle" src="<c:url value="/template/templateUser/images/quotations-button.png"/>" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Daniel vebar</strong></h5>
 								<h6 class="text-dark m-0">Seo Analyst</h6>
