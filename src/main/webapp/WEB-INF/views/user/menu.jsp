@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +27,9 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
+
 						<h2>Special Menu</h2>
+						<h1>${sanpham.size()}</h1>
 						<p>Lorem Ipsum is simply dummy text of the printing and
 							typesetting</p>
 					</div>
@@ -39,8 +42,10 @@
 						role="tablist" aria-orientation="vertical">
 						<a class="nav-link active" id="v-pills-home-tab"
 							data-toggle="pill" href="#v-pills-home" role="tab"
-							aria-controls="v-pills-home" aria-selected="true">All</a> <a
-							class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+							aria-controls="v-pills-home" aria-selected="true">All</a>
+						<c:forEach var="item" items="${ sanpham }">
+						</c:forEach>
+						<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
 							href="#v-pills-profile" role="tab"
 							aria-controls="v-pills-profile" aria-selected="false">Drinks</a>
 						<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
@@ -57,15 +62,20 @@
 						<div class="tab-pane fade show active" id="v-pills-home"
 							role="tabpanel" aria-labelledby="v-pills-home-tab">
 							<div class="row">
-								<div class="col-lg-4 col-md-6 special-grid drinks">
-									<div class="gallery-single fix">
-										<img src="images/img-01.jpg" class="img-fluid" alt="Image">
-										<div class="why-text">
-											<h4>Special Drinks 1</h4>
-											<p>Sed id magna vitae eros sagittis euismod.</p>
-											<h5>$7.79</h5>
+								<c:forEach var="item" items="${ sanpham }">
+									<div class="col-lg-4 col-md-6 special-grid drinks">
+										<div class="gallery-single fix">
+											<img
+												src="<c:url value="template/templateUser/images/${item.hinhAnh }"/>"
+												class="img-fluid" alt="Image">
+											<div class="why-text">
+												<h4>${item.tenSanPham}</h4>
+												<p>Sed id magna vitae eros sagittis euismod.</p>
+												<h5>${item.giaBan}</h5>
+											</div>
 										</div>
 									</div>
+								</c:forEach>
 								</div>
 
 								<div class="col-lg-4 col-md-6 special-grid drinks">
