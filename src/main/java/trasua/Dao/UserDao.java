@@ -3,8 +3,10 @@ package trasua.Dao;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Repository;
 
+import trasua.Entity.MapperTaiKhoan;
 import trasua.Entity.taikhoan;
 @Repository
 public class UserDao extends BaseDao {
@@ -21,6 +23,14 @@ public class UserDao extends BaseDao {
 
 		
 	}
+	public taikhoan GetAccount(taikhoan user) {
+		
+			String sql = "SELECT * FROM taikhoan WHERE status =0 and email ='" + user.getEmail() + "' ";
+
+			taikhoan u = _jdbcTemplate.queryForObject(sql, new MapperTaiKhoan());
+			return u;
+		
+	};
 	public String getDateNow() {
 		LocalDateTime now = LocalDateTime.now();
 		return dtf.format(now);

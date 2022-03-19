@@ -1,5 +1,6 @@
 package trasua.Controller.User;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,5 +38,37 @@ public class UserController extends BaseController {
 		}	
 		
 		return _mvShare;
+	}
+	
+	@RequestMapping(value = "login", method = RequestMethod.GET)
+	public ModelAndView viewLogin() {
+		_mvShare.setViewName("user/Login");
+		_mvShare.addObject("user", new taikhoan());
+		return _mvShare;
+	}
+
+	@RequestMapping(value = "login", method = RequestMethod.POST)
+	public ModelAndView Login(HttpSession session, @ModelAttribute("user") taikhoan user) {
+		user = accountService.CheckAccount(user);
+		if (user != null) {
+			_mvShare.setViewName("user/index");
+			 session.setAttribute("LoginInfor", user);
+			 
+			
+		} else if(user == null) {
+			_mvShare.addObject("Statuslogin", "Đăng nhập không thành công");
+			_mvShare.setViewName("user/Login");
+			
+		}
+
+		return _mvShare;
+	}
+
+	
+	@RequestMapping(value = "logout", method = RequestMethod.GET)
+	public String Login(HttpSession session, HttpServletRequest request) {
+		session.removeAttribute("LoginInfor");
+		session.removeAttribute("ShoppingCart");
+		return "redirect:/trang-chu";
 	}
 }

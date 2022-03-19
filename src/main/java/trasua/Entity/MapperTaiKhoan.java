@@ -12,7 +12,7 @@ public class MapperTaiKhoan implements RowMapper<taikhoan> {
 		tk.setEmail(rs.getString("email"));
 		tk.setMatKhau(rs.getString("matKhau"));
 		tk.setTenNguoiDung(rs.getString("tenNguoiDung"));
-		tk.setDiaChi(rs.getString("daiChi"));
+		tk.setDiaChi(rs.getString("diaChi"));
 		tk.setSdt(rs.getString("sdt"));
 		tk.setNgayTao(rs.getDate("ngayTao"));
 		tk.setNgayCapNhat(rs.getDate("ngayCapNhat"));
