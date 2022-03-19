@@ -7,8 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import Entity.Mapper;
-import Entity.sanpham;
+import trasua.Entity.Mapper;
+import trasua.Entity.MapperloaiSP;
+import trasua.Entity.loaisanpham;
+import trasua.Entity.sanpham;
 
 @Repository
 public class HomeDao {
@@ -21,4 +23,10 @@ public class HomeDao {
 		list = _jdbcTemplate.query(sql, new Mapper());
 		return list;
 	} 
+	public List<loaisanpham> GetDataloaiSP(){
+		List<loaisanpham> list = new ArrayList<loaisanpham>();
+		String sql = "SELECT * FROM loaisanpham";
+		list = _jdbcTemplate.query(sql, new MapperloaiSP());
+		return list;
+	}
 }

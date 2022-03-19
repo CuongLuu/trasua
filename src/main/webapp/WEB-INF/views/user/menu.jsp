@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="/taglib/taglib.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +29,7 @@
 					<div class="heading-title text-center">
 
 						<h2>Special Menu</h2>
-						<h1>${sanpham.size()}</h1>
+						<h1>${loaisanpham.size()}</h1>
 						<p>Lorem Ipsum is simply dummy text of the printing and
 							typesetting</p>
 					</div>
@@ -40,20 +40,26 @@
 				<div class="col-3">
 					<div class="nav flex-column nav-pills" id="v-pills-tab"
 						role="tablist" aria-orientation="vertical">
+
 						<a class="nav-link active" id="v-pills-home-tab"
 							data-toggle="pill" href="#v-pills-home" role="tab"
 							aria-controls="v-pills-home" aria-selected="true">All</a>
-						<c:forEach var="item" items="${ sanpham }">
+
+						<c:forEach var="loaisanpham" items="${loaisanpham}">
+							<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+								href="#v-pills-profile" role="tab"
+								aria-controls="v-pills-profile" aria-selected="false">${ loaisanpham.tenLoaiSanPham }</a>
 						</c:forEach>
-						<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+
+						<!-- <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
 							href="#v-pills-profile" role="tab"
 							aria-controls="v-pills-profile" aria-selected="false">Drinks</a>
 						<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
 							href="#v-pills-messages" role="tab"
-							aria-controls="v-pills-messages" aria-selected="false">Lunch</</a>
+							aria-controls="v-pills-messages" aria-selected="false">Lunch</a>
 						<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
 							href="#v-pills-settings" role="tab"
-							aria-controls="v-pills-settings" aria-selected="false">Dinner</a>
+							aria-controls="v-pills-settings" aria-selected="false">Dinner</a> -->
 					</div>
 				</div>
 
@@ -62,11 +68,11 @@
 						<div class="tab-pane fade show active" id="v-pills-home"
 							role="tabpanel" aria-labelledby="v-pills-home-tab">
 							<div class="row">
-								<c:forEach var="item" items="${ sanpham }">
+								<c:forEach var="item" items="${sanpham}">
 									<div class="col-lg-4 col-md-6 special-grid drinks">
 										<div class="gallery-single fix">
 											<img
-												src="<c:url value="template/templateUser/images/${item.hinhAnh }"/>"
+												src="<c:url value="/template/templateUser/images/${item.hinhAnh }"/>"
 												class="img-fluid" alt="Image">
 											<div class="why-text">
 												<h4>${item.tenSanPham}</h4>
@@ -76,9 +82,9 @@
 										</div>
 									</div>
 								</c:forEach>
-								</div>
+							</div>
 
-								<div class="col-lg-4 col-md-6 special-grid drinks">
+							<!-- <div class="col-lg-4 col-md-6 special-grid drinks">
 									<div class="gallery-single fix">
 										<img src="images/img-02.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
@@ -277,13 +283,13 @@
 											<h5>$24.79</h5>
 										</div>
 									</div>
-								</div>
-							</div>
+								</div> -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<!-- End Menu -->
 
