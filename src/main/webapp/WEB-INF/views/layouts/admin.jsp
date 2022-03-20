@@ -8,7 +8,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    
+    
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
     <meta name="author" content="Creative Tim">
     <title>Trà sữa CHNM | AdminManage</title>
@@ -25,16 +27,19 @@
     <link rel="stylesheet" href="<c:url value="/template/templateAdmin/assets/css/argon.css?v=1.2.0" />" type="text/css">
     <link href="<c:url value="/template/templateAdmin/assets/css/stylePaginate.css" />" rel="stylesheet" />
     <script src="<c:url value="/template/templateAdmin/Scripts/Scripts.js" />"></script>
+
+   
 </head>
 
 <body>
 
-
+		<c:if test="${not empty LoginInforAdmin }">
       <%@include file ="/WEB-INF/views/layouts/admin/header.jsp" %>
-	
+		</c:if>
 	<decorator:body />
-	
+		<c:if test="${not empty LoginInforAdmin }">
 	<%@include file ="/WEB-INF/views/layouts/admin/menu.jsp" %>
+		</c:if>
     <!-- Argon Scripts -->
     <!-- Core -->
     <script src="<c:url value="/template/templateAdmin/assets/vendor/jquery/dist/jquery.min.js" />"></script>
