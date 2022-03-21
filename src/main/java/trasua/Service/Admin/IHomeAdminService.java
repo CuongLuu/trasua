@@ -1,4 +1,4 @@
-package trasua.Service.User;
+package trasua.Service.Admin;
 
 import java.util.List;
 
@@ -6,12 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import trasua.Entity.loaisanpham;
-import trasua.Entity.taikhoan;
+import trasua.Entity.sanpham;
 
 @Service
-public interface IAccountService {
+public interface IHomeAdminService {
 	@Autowired
-	public int AddAccount (taikhoan user);
-	public taikhoan CheckAccount(taikhoan user);
-
+	public int insert(sanpham sp);
+	
+	
 }
