@@ -13,6 +13,8 @@ public class Mapper implements RowMapper<sanpham> {
 		sp.setTenSanPham(rs.getString("TenSanPham"));
 		sp.setHinhAnh(rs.getString("HinhAnh"));
 		sp.setGiaBan(rs.getFloat("giaBan"));
+		sp.setNgayTao(rs.getDate("ngayTao"));
+		sp.setNgayCapNhat(rs.getDate("ngayCapNhat"));
 		return sp;
 	}
 }

@@ -1,3 +1,7 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 encoding//src/main/java/trasua/Controller/Admin/LoginAdminController.java=UTF-8
+=======
+encoding//src/main/java/trasua/Controller/Admin/HomeAdminController.java=UTF-8
+>>>>>>> a53b70b1bab7fca8a0877ea7db285dfe9314f6b5
 encoding//src/main/java/trasua/Controller/User/UserController.java=UTF-8
