@@ -6,7 +6,7 @@
 		<div class="card">
 			<div class="card-header">
 				<h3>Đăng Nhập</h3>
-				<h4>${LoginInfor}</h4>
+				<%-- <h4>${LoginInfor}</h4> --%>
 				<div class="d-flex justify-content-end social_icon">
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-google-plus-square"></i></span>

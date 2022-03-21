@@ -1,0 +1,20 @@
+package trasua.Service.User;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import trasua.Dao.sanphamDao;
+import trasua.Entity.sanpham;
+
+@Service
+public class sanphamServiceImpl implements IsanphamService{
+	@Autowired 
+	sanphamDao sanphamDao = new sanphamDao();
+	
+	public List<sanpham> GetProductByID(int id) {
+	    return sanphamDao.GetProductByID(id);
+	}
+	
+}

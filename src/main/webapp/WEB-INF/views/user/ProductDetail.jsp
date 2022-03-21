@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
   <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
@@ -17,16 +18,30 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 text-center">
+				
 					<div class="inner-column">
 						<h1>Welcome To <span>Live Dinner Restaurant</span></h1>
-						<h4>Little Story</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-						<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
+						<h9>${item.tenSanPham}</h9>
+						<p>Tên sản phẩm ${item.tenSanPham}</p>
 						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Mua hàng</a>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6">
-					<img src="<c:url value= "templateUser/images/about-img.jpg"/>" alt="" class="img-fluid">
+				<c:forEach var="item" items="${sanpham}">
+				
+									<div class="col-lg-4 col-md-6 special-grid drinks">
+										<div class="gallery-single fix">
+											<img
+												src="<c:url value="/template/templateUser/images/${item.hinhAnh }"/>"
+												class="img-fluid" alt="Image">
+											<div class="why-text">
+												<h4>${item.tenSanPham}</h4>
+												<h5>${item.giaBan}</h5>
+											</div>
+										</div>
+									</div>
+								</c:forEach>
+					<%-- <img src="<c:url value= "/template/templateUser/images/${item.hinhAnh }}"/>" alt="" class="img-fluid"> --%>
 				</div>
 				<div class="col-md-12">
 					<div class="inner-pt">
