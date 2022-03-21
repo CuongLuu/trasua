@@ -15,4 +15,6 @@ public interface IHomeService {
 	
 	public List<loaisanpham> GetDataloaiSP();
 	
+	
+	
 }
