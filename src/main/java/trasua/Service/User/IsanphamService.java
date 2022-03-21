@@ -12,6 +12,6 @@ import trasua.Entity.sanpham;
 @Service
 public interface IsanphamService {
 	@Autowired 
-	public List<sanpham> GetProductByID(int id);
+	public List<sanpham> GetProductByID(long id);
 
 }

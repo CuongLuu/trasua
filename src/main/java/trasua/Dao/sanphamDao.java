@@ -24,17 +24,23 @@ public class sanphamDao extends BaseDao {
 		return sql;
 	}
 
-	private String SqlProductByID(int id) {
+	private String SqlProductByID(long id) {
 		StringBuffer sql = SqlString();
 		sql.append("WHERE maSanPham= " + id + "");
 		return sql.toString();
 	}
 
-	public List<sanpham> GetProductByID(int id) {
+	public List<sanpham> GetProductByID(long id) {
 		String sql = SqlProductByID(id);
 		List<sanpham> list = new ArrayList<sanpham>();
 		list = _jdbcTemplate.query(sql, new Mapper());
 		return list;
+	}
+	
+	public sanpham FindProductByID(long id) {
+		String sql = SqlProductByID(id);
+		sanpham SP = _jdbcTemplate.queryForObject(sql, new Mapper());
+		return SP;
 	}
 
 }

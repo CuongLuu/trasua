@@ -13,7 +13,7 @@ public class sanphamServiceImpl implements IsanphamService{
 	@Autowired 
 	sanphamDao sanphamDao = new sanphamDao();
 	
-	public List<sanpham> GetProductByID(int id) {
+	public List<sanpham> GetProductByID(long id) {
 	    return sanphamDao.GetProductByID(id);
 	}
 	
