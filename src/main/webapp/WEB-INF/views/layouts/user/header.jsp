@@ -2,7 +2,10 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="/taglib/taglib.jsp"%>
 <!-- Start header -->
+
+
 <header class="top-navbar">
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
 			<a class="navbar-brand" href="/index.jsp"> <img
@@ -10,11 +13,8 @@
 
 
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#navbars-rs-food" aria-controls="navbars-rs-food"
-				aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+			
+			
 			<div class="collapse navbar-collapse" id="navbars-rs-food">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a class="nav-link"
@@ -22,6 +22,11 @@
 					<li class="nav-item"><a class="nav-link"
 						href="<c:url value="menu"/>">Thực đơn</a></li>
 				</ul>
+				<a href="cart" class="nav-item nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                       <span
+              class="icon-shopping-cart"></span> ${ TotalQuantyCart } Sản phẩm - <span
+              class= "badge badge-warning"> ${ TotalPriceCart } </span></a>
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
 					<c:if test="${not empty LoginInfor }">

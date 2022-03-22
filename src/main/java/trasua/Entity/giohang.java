@@ -1,7 +1,7 @@
 package trasua.Entity;
 
 public class giohang {
-	private int quanty;
+	private long quanty;
 	private double total;
 	private sanpham product;
 	
@@ -10,17 +10,17 @@ public class giohang {
 	public giohang() {
 	}
 	
-	public giohang(int quanty, double total, sanpham product) {
+	public giohang(long quanty, double total, sanpham product) {
 		super();
 		this.quanty = quanty;
 		this.total = total;
 		this.product = product;
 	}
 	
-	public int getQuanty() {
+	public long getQuanty() {
 		return quanty;
 	}
-	public void setQuanty(int quanty) {
+	public void setQuanty(long quanty) {
 		this.quanty = quanty;
 	}
 	public double getTotal() {

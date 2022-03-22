@@ -19,7 +19,8 @@ public class giohangDao extends BaseDao {
 		sanpham SP = SanphamDao.FindProductByID(id);
 		if (SP != null && gh.containsKey(id)) {
 			itemCart = gh.get(id);
-			itemCart.setQuanty(itemCart.getQuanty()+1);
+			itemCart.setQuanty(itemCart.getQuanty() + 1);
+			itemCart.setTotal(itemCart.getQuanty() * itemCart.getProduct().getGiaBan());
 		}
 		else {
 			itemCart.setProduct(SP);
@@ -30,7 +31,7 @@ public class giohangDao extends BaseDao {
 		return gh;
 	}
 
-	public HashMap<Long, giohang> editCart(long id, int quanty, HashMap<Long, giohang> gh) {
+	public HashMap<Long, giohang> editCart(long id, long quanty, HashMap<Long, giohang> gh) {
 		if (gh == null) {
 			return gh;
 		}

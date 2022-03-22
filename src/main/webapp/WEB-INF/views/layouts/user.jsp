@@ -71,5 +71,7 @@
     <script src=<c:url value="/template/templateUser/js/contact-form-script.js" />></script>
     <script src=<c:url value="/template/templateUser/js/custom.js" />></script>
     
+    <decorator:getProperty property="page.script"></decorator:getProperty>
+    
 </body>
 </html>

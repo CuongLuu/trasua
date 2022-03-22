@@ -20,6 +20,7 @@
 		</div>
 	</div>
 	<!-- End All Pages -->
+	
 
 	<!-- Start Menu -->
 	<div class="menu-box">
@@ -72,9 +73,11 @@
 											<div class="why-text">
 												<h4>${item.tenSanPham}</h4>
 												<h5>${item.giaBan}</h5>
-												<a href="productDetail/${item.maSanPham}"><button
+												<a href="chi-tiet-sp/${item.maSanPham}"><button
 														style="color: white; background-color: #D65106; border-color: #D65106;">Chi
 														tiết sản phẩm</button></a>
+												<a href="addCart/${item.maSanPham}"><button
+														style="color: white; background-color: #D65106; border-color: #D65106;">Thêm vào giỏ hàng</button></a>
 											</div>
 										</div>
 									</div>

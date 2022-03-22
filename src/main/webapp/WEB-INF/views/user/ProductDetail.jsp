@@ -16,8 +16,6 @@
  	 
 <!-- End All Pages -->
 	<!-- Start About -->
-	<c:forEach var="item" items="${sanpham}">
-			<form method="get" action="<c:url value ="/addCart/${item.maSanPham} }"/>">
 	<div class="about-section-box">
 		<div class="container">
 			<div class="row">
@@ -25,14 +23,13 @@
 			<div class="col-lg-6 col-md-6 text-center">				
 					<div class="inner-column">
 						<h1>Welcome To <span>Live Dinner Restaurant</span></h1>
-						<h9>${item.tenSanPham}</h9>
-						<p>Tên sản phẩm ${item.tenSanPham}</p>
+						<h9>${sanpham.tenSanPham}</h9>
 						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Mua hàng</a>
-						<button type="submit" class="btn btn-lg btn-circle btn-outline-new-white">Thêm vào giỏ hàng</button>
+						<a href="addCart/${sanpham.maSanPham}"><button style="color: white; background-color: #D65106; border-color: #D65106;">Thêm vào giỏ hàng</button></a>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6">
-					<img src="<c:url value= "/template/templateUser/images/${item.hinhAnh }"/>" alt="" class="img-fluid">
+					<img src="<c:url value= "/template/templateUser/images/${sanpham.hinhAnh }"/>" alt="" class="img-fluid">
 				</div>
 				<div class="col-md-12">
 					<div class="inner-pt">
@@ -44,6 +41,5 @@
 			</div>
 		</div>
 	</div>
-	</form>
-			</c:forEach>
+
 	<!-- End About -->
