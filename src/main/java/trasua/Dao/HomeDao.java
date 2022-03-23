@@ -16,7 +16,7 @@ import trasua.Entity.sanpham;
 public class HomeDao {
 	@Autowired
 	public JdbcTemplate _jdbcTemplate;
-	
+		
 	public List<sanpham> GetDataSlide(){
 		List<sanpham> list = new ArrayList<sanpham>();
 		String sql = "SELECT * FROM sanpham";
@@ -29,4 +29,10 @@ public class HomeDao {
 		list = _jdbcTemplate.query(sql, new MapperloaiSP());
 		return list;
 	}
+	public List<sanpham> GetDataDetail(){
+		List<sanpham> list = new ArrayList<sanpham>();
+		String sql = "SELECT * FROM sanpham";
+		list = _jdbcTemplate.query(sql, new Mapper());
+		return list;
+	} 
 }
