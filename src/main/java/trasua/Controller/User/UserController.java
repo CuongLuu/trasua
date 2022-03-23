@@ -30,11 +30,11 @@ public class UserController extends BaseController {
 		int count = accountService.AddAccount(user);
 		if (count != 0) {
 			_mvShare.addObject("StatusRegister", "Đăng ký tài khoản thành công!");
-			_mvShare.setViewName("user/index");
+			_mvShare.setViewName("redirect:/user/index");
 			session.setAttribute("LoginInfor", user);
 		} else {
 			_mvShare.addObject("StatusRegister", "Đăng ký tài khoản không thành công!");
-			_mvShare.setViewName("user/Register");
+			_mvShare.setViewName("redirect:/user/Register");
 		}	
 		
 		return _mvShare;

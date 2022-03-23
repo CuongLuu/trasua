@@ -39,6 +39,7 @@ public class UserDao extends BaseDao {
 			
 		
 	};
+	
 	public String getDateNow() {
 		LocalDateTime now = LocalDateTime.now();
 		return dtf.format(now);

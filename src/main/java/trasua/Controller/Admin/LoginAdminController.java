@@ -29,12 +29,12 @@ public class LoginAdminController extends BaseAdminController {
 	public ModelAndView LoginAdmin(HttpSession session, @ModelAttribute("user") taikhoan user) {
 		user = accountService.CheckAccountAdmin(user);
 		if (user != null) {
-			_mvaShare.setViewName("admin/index");
+			_mvaShare.setViewName("redirect:/admin/index");
 			_mvaShare.addObject("StatusloginAdmin", "Đăng nhập thành công!");
 			session.setAttribute("LoginInforAdmin", user);
 		} else if(user == null) {
 			_mvaShare.addObject("StatusloginAdmin", "Đăng nhập không thành công!");
-			_mvaShare.setViewName("admin/LoginAdmin");
+			_mvaShare.setViewName("redirect:/admin/LoginAdmin");
 			
 		}
 

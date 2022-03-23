@@ -5,7 +5,7 @@
         <div class="scrollbar-inner">
             <!-- Brand -->
             <div class="sidenav-header  align-items-center">
-                <a class="navbar-brand" href="javascript:void(0)">
+                <a class="navbar-brand" href="quan-ly">
                     <img src="<c:url value="/template/templateAdmin/assets/img/brand/admin.png" />" class="navbar-brand-img" alt="...">
 
                 </a>
@@ -16,7 +16,7 @@
                     <!-- Nav items -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="">
+                            <a class="nav-link active" href="quan-ly">
                                 <i class="ni ni-tv-2 text-primary"></i>
                                 <span class="nav-link-text">AdminManage</span>
                             </a>
@@ -34,33 +34,26 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">
+                            <a class="nav-link" href="sanpham">
                                 <i class="ni ni-ruler-pencil text-info"></i>
                                 <span class="nav-link-text">Sản phẩm</span>
                             </a>
 
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">
-                                <i class="ni ni-check-bold"></i>
-                                <span class="nav-link-text">Duyệt bài</span>
-                            </a>
-
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">
+                     <li class="nav-item">
+                            <a class="nav-link" href="loaisanpham">
                                 <i class="ni ni-shop"></i>
-                                <span class="nav-link-text">Cửa hàng</span>
+                                <span class="nav-link-text">Loại sản phẩm</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">
+                            <a class="nav-link" href="taikhoan-user">
                                 <i class="ni ni-single-02 text-purple"></i>
                                 <span class="nav-link-text">Người dùng</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">
+                            <a class="nav-link" href="taikhoan-admin">
                                 <i class="ni ni-circle-08 text-pink"></i>
                                 <span class="nav-link-text">Nhân viên</span>
                             </a>
