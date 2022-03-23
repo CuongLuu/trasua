@@ -88,7 +88,7 @@
 							class="fa fa-angle-left"></i> Tiếp tục mua</a></td>
 					<td colspan="2" class="hidden-xs"></td>
 					<td class="hidden-xs text-center" style="margin-right: 5px;"><strong>Tổng: <span >${ TotalPriceCart }đ</span></strong></td>
-					<td><a href="/Payment/Payment"
+					<td><a href="checkout"
 						class="btn btn-success btn-block">Thanh toán <i
 							class="fa fa-angle-right"></i></a></td>
 				</tr>
