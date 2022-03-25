@@ -6,8 +6,8 @@
 		<div class="card">
 			<div class="card-header">
 				<h3>Đăng Nhập</h3>
-				<%-- <h4>${LoginInfor}</h4> --%>
-				<div class="d-flex justify-content-end social_icon">
+				
+				<div class="d-flex justify-content-end social_icon" style="margin-top: 30px">
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-google-plus-square"></i></span>
 					<span><i class="fab fa-twitter-square"></i></span>
@@ -38,7 +38,7 @@
 					</div>
 				</form:form> 
 			</div>
-			<div class="card-footer">
+			<div class="card-footer" style="margin-top: -30px">
 				<div class="d-flex justify-content-center links">
 					Bạn chưa có tài khoản??<a href="/trasua/register">Đăng Ký</a>
 				</div>

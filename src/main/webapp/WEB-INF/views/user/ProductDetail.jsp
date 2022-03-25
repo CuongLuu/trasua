@@ -8,7 +8,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<h1>Chi tiết sản phẩm</h1>
-					<h1>${ giohang.size()}</h1>
+				
 				</div>
 			</div>
 		</div>
@@ -22,8 +22,8 @@
 			
 			<div class="col-lg-6 col-md-6 text-center">				
 					<div class="inner-column">
+					
 						<h1>Welcome To <span>Live Dinner Restaurant</span></h1>
-						<h9>${sanpham.tenSanPham}</h9>
 						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Mua hàng</a>
 						<a href="addCart/${sanpham.maSanPham}"><button style="color: white; background-color: #D65106; border-color: #D65106;">Thêm vào giỏ hàng</button></a>
 					</div>

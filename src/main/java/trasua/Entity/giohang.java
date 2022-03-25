@@ -1,8 +1,8 @@
 package trasua.Entity;
 
 public class giohang {
-	private long quanty;
-	private double total;
+	private int quanty;
+	private float total;
 	private sanpham product;
 	
 	
@@ -10,23 +10,23 @@ public class giohang {
 	public giohang() {
 	}
 	
-	public giohang(long quanty, double total, sanpham product) {
+	public giohang(int quanty, float total, sanpham product) {
 		super();
 		this.quanty = quanty;
 		this.total = total;
 		this.product = product;
 	}
 	
-	public long getQuanty() {
+	public int getQuanty() {
 		return quanty;
 	}
-	public void setQuanty(long quanty) {
+	public void setQuanty(int quanty) {
 		this.quanty = quanty;
 	}
-	public double getTotal() {
+	public float getTotal() {
 		return total;
 	}
-	public void setTotal(double total) {
+	public void setTotal(float total) {
 		this.total = total;
 	}
 	public sanpham getProduct() {
