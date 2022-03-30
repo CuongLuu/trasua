@@ -8,7 +8,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-			<a class="navbar-brand" href="trang-chu"> <img
+			<a class="navbar-brand" href="/index.jsp"> <img
 				src="<c:url value="template/templateUser/images/logo.png"/>" alt="" />
 
 
