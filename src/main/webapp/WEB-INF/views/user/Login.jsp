@@ -7,6 +7,14 @@
 			<div class="card-header">
 				<h3>Đăng Nhập</h3>
 <<<<<<< HEAD
+				
+<<<<<<< HEAD
+				<div class="d-flex justify-content-end social_icon">
+=======
+				<div class="d-flex justify-content-end social_icon" style="margin-top: 30px">
+>>>>>>> refs/remotes/origin/minh
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<%-- <h4>${LoginInfor}</h4> --%>
 
@@ -19,6 +27,7 @@
 				<%-- <h4>${LoginInfor}</h4> --%>
 				<div class="d-flex justify-content-end social_icon">
 >>>>>>> 20fc8b644522b0aeb5ee11eb79478f4dde3086fd
+>>>>>>> c7b8b054995cd8f2dc60b42b86e731b4653b4577
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-google-plus-square"></i></span>
 					<span><i class="fab fa-twitter-square"></i></span>

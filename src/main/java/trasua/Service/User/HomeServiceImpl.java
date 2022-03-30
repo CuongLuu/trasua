@@ -28,5 +28,13 @@ public class HomeServiceImpl implements IHomeService {
 		return loaisanpham.GetDataloaiSP();
 	}
 	
+<<<<<<< HEAD
+<<<<<<< HEAD
+	
+	
+=======
+>>>>>>> refs/remotes/origin/minh
+=======
 
+>>>>>>> c7b8b054995cd8f2dc60b42b86e731b4653b4577
 }
