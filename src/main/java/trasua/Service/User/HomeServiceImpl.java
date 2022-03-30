@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import trasua.Dao.HomeDao;
+import trasua.Dao.Admin.ProductDao;
 import trasua.Entity.loaisanpham;
 import trasua.Entity.sanpham;
 
@@ -15,6 +16,7 @@ public class HomeServiceImpl implements IHomeService {
 	HomeDao HomeDao;
 	@Autowired
 	HomeDao loaisanpham;
+
 
 	public List<sanpham> GetDataSlide() {
 
@@ -26,4 +28,5 @@ public class HomeServiceImpl implements IHomeService {
 		return loaisanpham.GetDataloaiSP();
 	}
 	
+
 }
