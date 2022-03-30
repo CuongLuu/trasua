@@ -13,14 +13,14 @@ import trasua.Entity.sanpham;
 @Service
 public class HomeServiceImpl implements IHomeService {
 	@Autowired 
-	HomeDao SanPhamDao;
+	HomeDao HomeDao;
 	@Autowired
 	HomeDao loaisanpham;
 
 
 	public List<sanpham> GetDataSlide() {
 
-		return SanPhamDao.GetDataSlide();
+		return HomeDao.GetDataSlide();
 	}
 	
 	public List<loaisanpham> GetDataloaiSP() {
@@ -28,6 +28,9 @@ public class HomeServiceImpl implements IHomeService {
 		return loaisanpham.GetDataloaiSP();
 	}
 	
+<<<<<<< HEAD
 	
 	
+=======
+>>>>>>> refs/remotes/origin/minh
 }

@@ -29,8 +29,13 @@ public class UserController extends BaseController {
 	public ModelAndView CreateAccount(HttpSession session,@ModelAttribute("user") taikhoan user) throws Exception{
 		int count = accountService.AddAccount(user);
 		if (count != 0) {
+<<<<<<< HEAD
 			_mvShare.addObject("StatusRegister", "Đăng ký tài khoản thành công!");
 			_mvShare.setViewName("user/index");
+=======
+			_mvShare.addObject("Status", "Đăng ký tài khoản thành công");
+			_mvShare.setViewName("user/Login");
+>>>>>>> refs/remotes/origin/minh
 			session.setAttribute("LoginInfor", user);
 		} else {
 			_mvShare.addObject("StatusRegister", "Đăng ký tài khoản không thành công!");

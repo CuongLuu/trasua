@@ -3,7 +3,6 @@ package trasua.Dao;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Repository;
 
 import trasua.Entity.MapperTaiKhoan;
@@ -45,6 +44,7 @@ public class UserDao extends BaseDao {
 	}
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 	
+<<<<<<< HEAD
 	
 	public taikhoan GetAccountAdmin(taikhoan user) {
 		try {
@@ -60,4 +60,6 @@ public class UserDao extends BaseDao {
 	
 };
 
+=======
+>>>>>>> refs/remotes/origin/minh
 }

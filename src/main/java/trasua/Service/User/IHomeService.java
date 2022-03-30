@@ -13,7 +13,7 @@ public interface IHomeService {
 	@Autowired
 	public List<sanpham> GetDataSlide();
 	
-	public List<loaisanpham> GetDataloaiSP();
+	public List<loaisanpham> GetDataloaiSP();	
 	
 	
 	
