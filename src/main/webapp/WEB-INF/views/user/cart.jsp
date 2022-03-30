@@ -13,7 +13,7 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Giỏ hàng</h1>
+					<h1>Chi tiết giỏ hàng</h1>
 				</div>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 	<div class="page-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12" style="margin-top: 20px; color: orange">
 					<h2>Chi tiết giỏ hàng</h2>
 				</div>
 				<div class="col-12">
@@ -60,14 +60,18 @@
 							</div>
 						</td>
 						<td data-th="tenSanPham"><span>${item.value.product.tenSanPham }</span></td>
-						<td data-th="Price"><span>${ item.value.product.giaBan } đ</span></td>
+						<td data-th="Price"><span>${ item.value.product.giaBan }
+								đ</span></td>
 						<td data-th="Quantity"><input type="number" min="0"
 							max="1000" class="form-control text-center"
-							value="${ item.value.quanty }" id="quanty-cart-${item.value.product.maSanPham }" /></td>
+							value="${ item.value.quanty }"
+							id="quanty-cart-${item.value.product.maSanPham }" /></td>
 						<td class="actions" data-th="">
-								<button class="btn btn-danger btn-sm edit-cart" data-id="${item.key}">
-									<i class="fa fa-trash-o">Sửa</i>
-								</button></td>
+							<button class="btn btn-danger btn-sm edit-cart"
+								data-id="${item.key}">
+								<i class="fa fa-trash-o">Sửa</i>
+							</button>
+						</td>
 
 						<td class="actions" data-th=""><a
 							href="<c:url value ="/deleteCart/${item.value.product.maSanPham } "/>">
@@ -87,24 +91,25 @@
 					<td><a href="trang-chu" class="btn btn-warning"><i
 							class="fa fa-angle-left"></i> Tiếp tục mua</a></td>
 					<td colspan="2" class="hidden-xs"></td>
-					<td class="hidden-xs text-center" style="margin-right: 5px;"><strong>Tổng: <span >${ TotalPriceCart }đ</span></strong></td>
-					<td><a href="checkout"
-						class="btn btn-success btn-block">Thanh toán <i
-							class="fa fa-angle-right"></i></a></td>
+					<td class="hidden-xs text-center"
+						style="margin-right: 5px; font-size: 18px";><strong>Tổng:
+							<span>${ TotalPriceCart }đ</span>
+					</strong></td>
+					<td><a href="checkout" class="btn btn-success btn-block">Thanh
+							toán <i class="fa fa-angle-right"></i>
+					</a></td>
 				</tr>
 			</tfoot>
 
 		</table>
 	</div>
-<content tag="script">
-<script>
-    $(".edit-cart").on("click", function(){
-        var id = $(this).data("id");
-        var quanty = $("#quanty-cart-"+id).val();
-        alert(quanty);
-        window.location = "editCart/"+id+"/"+quanty;
-    });
-</script>
-</content>
+	<content tag="script"> <script>
+		$(".edit-cart").on("click", function() {
+			var id = $(this).data("id");
+			var quanty = $("#quanty-cart-" + id).val();
+			alert(quanty);
+			window.location = "editCart/" + id + "/" + quanty;
+		});
+	</script> </content>
 </body>
 </html>

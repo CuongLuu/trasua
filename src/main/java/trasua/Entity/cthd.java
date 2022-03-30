@@ -1,27 +1,28 @@
 package trasua.Entity;
 
 public class cthd {
-	private long maCT;
+	private int maCT;
 	private int maSanPham;
-	private long maHoaDon;
-	private long quanty;
-	private double total;
+	private int maHoaDon;
+	private int quanty;
+	private float total;
+	
+	/*
+	 * public cthd() {
+	 * 
+	 * } public cthd(int maCT, int maSanPham, int maHoaDon, int quanty, float total)
+	 * { super(); this.maCT = maCT; this.maSanPham = maSanPham; this.maHoaDon =
+	 * maHoaDon; this.quanty = quanty; this.total = total; }
+	 */
 	
 	public cthd() {
-		
-	}
-	public cthd(long maCT, int maSanPham, long maHoaDon, long quanty, double total) {
 		super();
-		this.maCT = maCT;
-		this.maSanPham = maSanPham;
-		this.maHoaDon = maHoaDon;
-		this.quanty = quanty;
-		this.total = total;
 	}
-	public long getMaCT() {
+	
+	public int getMaCT() {
 		return maCT;
 	}
-	public void setMaCT(long maCT) {
+	public void setMaCT(int maCT) {
 		this.maCT = maCT;
 	}
 	public int getMaSanPham() {
@@ -30,22 +31,22 @@ public class cthd {
 	public void setMaSanPham(int maSanPham) {
 		this.maSanPham = maSanPham;
 	}
-	public long getMaHoaDon() {
+	public int getMaHoaDon() {
 		return maHoaDon;
 	}
-	public void setMaHoaDon(long maHoaDon) {
+	public void setMaHoaDon(int maHoaDon) {
 		this.maHoaDon = maHoaDon;
 	}
-	public long getQuanty() {
+	public int getQuanty() {
 		return quanty;
 	}
-	public void setQuanty(long quanty) {
+	public void setQuanty(int quanty) {
 		this.quanty = quanty;
 	}
-	public double getTotal() {
+	public float getTotal() {
 		return total;
 	}
-	public void setTotal(double total) {
+	public void setTotal(float total) {
 		this.total = total;
 	}
 }
