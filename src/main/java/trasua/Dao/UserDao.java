@@ -61,5 +61,23 @@ public class UserDao extends BaseDao {
 	
 };
 
+<<<<<<< HEAD
 
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/minh
+=======
+>>>>>>> 85f30fd83e0e2974f2ee87b751d0e01e9330bbf6
+>>>>>>> 418d53e0ce486259fe99ae7c978b14eaaf959d33
+=======
+	DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+>>>>>>> 20fc8b644522b0aeb5ee11eb79478f4dde3086fd
+<<<<<<< HEAD
+=======
+>>>>>>> c7b8b054995cd8f2dc60b42b86e731b4653b4577
+>>>>>>> 85f30fd83e0e2974f2ee87b751d0e01e9330bbf6
+>>>>>>> refs/remotes/origin/minh
 }
