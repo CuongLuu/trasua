@@ -21,7 +21,7 @@ public class hoadonServiceImpl implements IhoadonService{
 	}
 	
 	public void addcthd(HashMap<Long, giohang> carts) {
-		int maHoaDon = hdDao.GetIDLastBills();
+		long maHoaDon = hdDao.GetIDLastBills();
 		for (Map.Entry<Long, giohang> itemCart : carts.entrySet()) {
 			cthd ct= new cthd();
 			ct.setMaHoaDon(maHoaDon);

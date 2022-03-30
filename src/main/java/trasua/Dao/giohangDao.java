@@ -31,7 +31,7 @@ public class giohangDao extends BaseDao {
 		return gh;
 	}
 
-	public HashMap<Long, giohang> editCart(long id, int quanty, HashMap<Long, giohang> gh) {
+	public HashMap<Long, giohang> editCart(long id, long quanty, HashMap<Long, giohang> gh) {
 		if (gh == null) {
 			return gh;
 		}
@@ -41,7 +41,7 @@ public class giohangDao extends BaseDao {
 			itemCart = gh.get(id);
 			itemCart.setQuanty(1);
 			itemCart.setQuanty(quanty);
-			float total = quanty * itemCart.getProduct().getGiaBan();
+			double total = quanty * itemCart.getProduct().getGiaBan();
 			itemCart.setTotal(total);
 		}
 		gh.put(id, itemCart);
@@ -66,8 +66,8 @@ public class giohangDao extends BaseDao {
 		return totalQuanty;
 	}
 
-	public float TotalPrice(HashMap<Long, giohang> gh) {
-		float TotalPrice = 0;
+	public double TotalPrice(HashMap<Long, giohang> gh) {
+		double TotalPrice = 0;
 		for (Map.Entry<Long, giohang> itemCart : gh.entrySet()) {
 			TotalPrice += itemCart.getValue().getTotal();
 		}
