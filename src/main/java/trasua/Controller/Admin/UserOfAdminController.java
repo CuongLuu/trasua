@@ -14,7 +14,7 @@ public class UserOfAdminController extends BaseAdminController {
 	
 	@RequestMapping(value="/admin/taikhoan-user")
 	public ModelAndView listAccUser() {
-		_mvaShare.setViewName("admin/AccountUer");
+		_mvaShare.setViewName("admin/AccountUser");
 		_mvaShare.addObject("taikhoan", accService.GetDataAcc());
 		return _mvaShare;
 	}
@@ -25,4 +25,5 @@ public class UserOfAdminController extends BaseAdminController {
 		_mvaShare.addObject("taikhoan", accService.GetDataAccAdmin());
 		return _mvaShare;
 	}
+	
 }

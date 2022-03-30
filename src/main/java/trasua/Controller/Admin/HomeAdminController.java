@@ -26,10 +26,17 @@ public class HomeAdminController extends BaseAdminController {
 	@Autowired
 	AccServiceImpl accService= new AccServiceImpl();
 	
-	@RequestMapping(value = {"/admin/quan-ly"})
-	public ModelAndView quanLy() {
-		ModelAndView mv = new ModelAndView("admin/hompage");
-		return mv;
+	@RequestMapping(value = {"/admin/hompage"})
+	public ModelAndView Index(HttpSession session) {
+		if(session.getAttribute("LoginInforAdmin")!=null)
+		{
+			_mvaShare.setViewName("admin/index");
+		}
+		else {
+			_mvaShare.addObject("user", new taikhoan());
+			_mvaShare.setViewName("admin/LoginAdmin");
+		}
+		return _mvaShare;
 	}
 	
 	@RequestMapping(value = {"/admin/sanpham"})

@@ -16,7 +16,7 @@
                     <!-- Nav items -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="quan-ly">
+                            <a class="nav-link active" href="hompage">
                                 <i class="ni ni-tv-2 text-primary"></i>
                                 <span class="nav-link-text">AdminManage</span>
                             </a>
@@ -71,9 +71,18 @@
                             </a>
                         </li>
 
-                    </ul>
+                    </ul >
+                   
                     <!-- Divider -->
                     <hr class="my-3">
+                     <ul class="navbar-nav">
+                    <li class="nav-item">
+                            <a class="nav-link" href="logoutadmin">
+                                <i class="ni ni-button-power"> <span class="nav-link-text">Thoát</span> </i>
+                               
+                            </a>
+                        </li>
+                    </ul>
                     <!-- Heading -->
 
                 </div>

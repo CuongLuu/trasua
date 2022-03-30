@@ -1,5 +1,6 @@
 package trasua.Controller.Admin;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ public class LoginAdminController extends BaseAdminController {
 	@Autowired
 	AccountServiceImpl accountService = new AccountServiceImpl();
 	
-	@RequestMapping(value = "/admin", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/login", method = RequestMethod.GET)
 	public ModelAndView viewLoginAdmin() {
 		_mvaShare.setViewName("admin/LoginAdmin");
 		_mvaShare.addObject("user", new taikhoan());
@@ -29,15 +30,22 @@ public class LoginAdminController extends BaseAdminController {
 	public ModelAndView LoginAdmin(HttpSession session, @ModelAttribute("user") taikhoan user) {
 		user = accountService.CheckAccountAdmin(user);
 		if (user != null) {
-			_mvaShare.setViewName("redirect:/admin/index");
+			_mvaShare.setViewName("admin/index");
 			_mvaShare.addObject("StatusloginAdmin", "Đăng nhập thành công!");
 			session.setAttribute("LoginInforAdmin", user);
-		} else if(user == null) {
-			_mvaShare.addObject("StatusloginAdmin", "Đăng nhập không thành công!");
-			_mvaShare.setViewName("redirect:/admin/LoginAdmin");
+		} else {
+			
+				_mvaShare.addObject("StatusloginAdmin", "Đăng nhập không thành công!");
+				_mvaShare.setViewName("admin/LoginAdmin");
 			
 		}
 
 		return _mvaShare;
+	}
+	@RequestMapping(value = "/admin/logoutadmin", method = RequestMethod.GET)
+	public String Login(HttpSession session, HttpServletRequest request) {
+		session.removeAttribute("LoginInforAdmin");
+		_mvaShare.addObject("StatusloginAdmin", "");
+		return "redirect:/admin/login";
 	}
 }
