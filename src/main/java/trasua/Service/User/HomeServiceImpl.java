@@ -29,6 +29,9 @@ public class HomeServiceImpl implements IHomeService {
 	}
 	
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 	
 	
@@ -37,4 +40,5 @@ public class HomeServiceImpl implements IHomeService {
 =======
 
 >>>>>>> c7b8b054995cd8f2dc60b42b86e731b4653b4577
+>>>>>>> 85f30fd83e0e2974f2ee87b751d0e01e9330bbf6
 }
