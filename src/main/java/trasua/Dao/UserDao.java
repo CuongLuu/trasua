@@ -44,9 +44,8 @@ public class UserDao extends BaseDao {
 		return dtf.format(now);
 	}
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-<<<<<<< HEAD
 	
-<<<<<<< HEAD
+
 	
 	public taikhoan GetAccountAdmin(taikhoan user) {
 		try {
@@ -62,6 +61,9 @@ public class UserDao extends BaseDao {
 	
 };
 
+<<<<<<< HEAD
+
+=======
 =======
 <<<<<<< HEAD
 =======
@@ -77,4 +79,5 @@ public class UserDao extends BaseDao {
 =======
 >>>>>>> c7b8b054995cd8f2dc60b42b86e731b4653b4577
 >>>>>>> 85f30fd83e0e2974f2ee87b751d0e01e9330bbf6
+>>>>>>> refs/remotes/origin/minh
 }

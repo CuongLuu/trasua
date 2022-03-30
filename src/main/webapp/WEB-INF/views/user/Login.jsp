@@ -7,6 +7,8 @@
 			<div class="card-header">
 				<h3>Đăng Nhập</h3>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		<%-- <h4>${LoginInfor}</h4> --%>
@@ -15,9 +17,11 @@
 =======
 =======
 >>>>>>> 85f30fd83e0e2974f2ee87b751d0e01e9330bbf6
+>>>>>>> refs/remotes/origin/minh
 				
-<<<<<<< HEAD
 				<div class="d-flex justify-content-end social_icon">
+<<<<<<< HEAD
+=======
 =======
 				<div class="d-flex justify-content-end social_icon" style="margin-top: 30px">
 <<<<<<< HEAD
@@ -42,6 +46,7 @@
 =======
 >>>>>>> c7b8b054995cd8f2dc60b42b86e731b4653b4577
 >>>>>>> 85f30fd83e0e2974f2ee87b751d0e01e9330bbf6
+>>>>>>> refs/remotes/origin/minh
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-google-plus-square"></i></span>
 					<span><i class="fab fa-twitter-square"></i></span>
@@ -49,7 +54,6 @@
 			</div>
 			<div class="card-body">
 				<form:form action="login"  method="post" modelAttribute="user">
-				 <a style="color:red;" target="blank">${Statuslogin}</a>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
