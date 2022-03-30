@@ -17,7 +17,7 @@ import trasua.Service.User.AccountServiceImpl;
 import trasua.Service.User.HomeServiceImpl;
 
 @Controller
-public class HomeAdminController {
+public class HomeAdminController extends BaseAdminController {
 
 	@Autowired
 	HomeServiceImpl homeService= new HomeServiceImpl();
@@ -26,11 +26,19 @@ public class HomeAdminController {
 	@Autowired
 	AccServiceImpl accService= new AccServiceImpl();
 	
-	@RequestMapping(value = {"/admin/donhang"})
-	public ModelAndView donhang() {
-		ModelAndView mv = new ModelAndView("admin/donhang");
-		return mv;
+	@RequestMapping(value = {"/admin/hompage"})
+	public ModelAndView Index(HttpSession session) {
+		if(session.getAttribute("LoginInforAdmin")!=null)
+		{
+			_mvaShare.setViewName("admin/index");
+		}
+		else {
+			_mvaShare.addObject("user", new taikhoan());
+			_mvaShare.setViewName("admin/LoginAdmin");
+		}
+		return _mvaShare;
 	}
+	
 	@RequestMapping(value = {"/admin/sanpham"})
 	public ModelAndView sanpham() {
 		ModelAndView mv = new ModelAndView("admin/ProductAdmin");
@@ -45,12 +53,6 @@ public class HomeAdminController {
 		return mv;
 	}
 	
-	@RequestMapping(value = {"/admin/taikhoan"})
-	public ModelAndView taikhoan() {
-		ModelAndView mv = new ModelAndView("admin/AccountAdmin");
-		mv.addObject("taikhoan", accService.GetDataAcc());
-		return mv;
-	}
 	@RequestMapping(value = {"/admin/themsanpham"})
 	public ModelAndView trangthemsanpham() {
 		ModelAndView mv = new ModelAndView("admin/CreateProduct");

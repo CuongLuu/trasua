@@ -15,5 +15,9 @@ public class AccServiceImpl implements IAccService{
 	public List<taikhoan> GetDataAcc() {
 		return taikhoan.GetDataAcc();
 	}
+	public List<taikhoan> GetDataAccAdmin() {
+		return taikhoan.GetDataAccAdmin();
+	}
+	
 
 }

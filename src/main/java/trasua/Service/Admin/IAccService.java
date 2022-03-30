@@ -12,4 +12,5 @@ import trasua.Entity.taikhoan;
 public interface IAccService {
 	@Autowired
 	public List<taikhoan> GetDataAcc();
+	public List<taikhoan> GetDataAccAdmin();
 }
