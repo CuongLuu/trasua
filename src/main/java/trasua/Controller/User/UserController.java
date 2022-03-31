@@ -29,29 +29,9 @@ public class UserController extends BaseController {
 	public ModelAndView CreateAccount(HttpSession session,@ModelAttribute("user") taikhoan user) throws Exception{
 		int count = accountService.AddAccount(user);
 		if (count != 0) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 			_mvShare.addObject("StatusRegister", "Đăng ký tài khoản thành công!");
 			_mvShare.setViewName("user/index");
-=======
-			_mvShare.addObject("Status", "Đăng ký tài khoản thành công");
-			_mvShare.setViewName("user/Login");
->>>>>>> refs/remotes/origin/minh
-=======
->>>>>>> 85f30fd83e0e2974f2ee87b751d0e01e9330bbf6
-
-			_mvShare.addObject("StatusRegister", "Đăng ký tài khoản thành công!");
-			_mvShare.setViewName("redirect:/user/index");
-
-			_mvShare.addObject("Status", "Đăng ký tài khoản thành công");
-			_mvShare.setViewName("user/Login");
-
-<<<<<<< HEAD
-=======
->>>>>>> c7b8b054995cd8f2dc60b42b86e731b4653b4577
->>>>>>> 85f30fd83e0e2974f2ee87b751d0e01e9330bbf6
 			session.setAttribute("LoginInfor", user);
 		} else {
 			_mvShare.addObject("StatusRegister", "Đăng ký tài khoản không thành công!");
@@ -89,7 +69,7 @@ public class UserController extends BaseController {
 	@RequestMapping(value = "logout", method = RequestMethod.GET)
 	public String Login(HttpSession session, HttpServletRequest request) {
 		session.removeAttribute("LoginInfor");
-		session.removeAttribute("ShoppingCart");
+		 _mvShare.addObject("Statuslogin", "");
 		return "redirect:/trang-chu";
 	}
 }

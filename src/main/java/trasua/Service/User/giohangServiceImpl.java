@@ -19,8 +19,8 @@ public class giohangServiceImpl implements IgiohangService {
 	}
 
 	@Override
-	public HashMap<Long, giohang> editCart(long id, long quanty, HashMap<Long, giohang> gh) {
-		return GiohangDao.editCart(id, quanty, gh);
+	public HashMap<Long, giohang> editCart(long id,int quanty, HashMap<Long, giohang> gh) {
+		return GiohangDao.editCart(id, (int)quanty, gh);
 	}
 
 	@Override
