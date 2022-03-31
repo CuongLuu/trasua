@@ -15,4 +15,11 @@ public class HomeAdminServiceImpl implements IHomeAdminService{
 		// TODO Auto-generated method stub
 		return themsanpham.insert(sp);
 	}
+	public void delete(int id) {
+		themsanpham.delete(id);
+	}
+	public void edit(sanpham sp, long idProduct) {
+		themsanpham.edit(sp, idProduct);
+		
+	}
 }

@@ -1,10 +1,13 @@
 package trasua.Controller.Admin;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -19,6 +22,7 @@ import trasua.Service.User.HomeServiceImpl;
 @Controller
 public class HomeAdminController {
 	
+
 	@Autowired
 	HomeServiceImpl homeService= new HomeServiceImpl();
 	@Autowired
@@ -30,6 +34,7 @@ public class HomeAdminController {
 		ModelAndView mv = new ModelAndView("admin/index");
 		return mv;
 	}
+
 	
 	@RequestMapping(value = {"/admin/donhang"})
 	public ModelAndView donhang() {
@@ -78,6 +83,25 @@ public class HomeAdminController {
 			return mv;
 		}	
 		
+	}
+	@RequestMapping(value = "admin/xoasanpham/{id}")
+	public String xoasanpham(@PathVariable int id, Model model, HttpServletRequest request) {
+
+		homeadminService.delete(id);
+
+		model.addAttribute("sanpham", homeService.GetDataSlide());
+
+		return "redirect:" + request.getHeader("Referer");
+	}
+	@RequestMapping(value = "admin/suasanpham/{id}", method = RequestMethod.POST)
+	public String editProduct(HttpServletRequest request, HttpSession session,
+			@ModelAttribute("products") sanpham sp, @PathVariable("id") long idProduct) {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("admin/EditProduct");
+		homeadminService.edit(sp, idProduct);
+		mv.addObject("statusUpdateProdcut", "Cập nhật thành công!!!");
+
+		return "redirect:" + request.getHeader("Referer");
 	}
 	
 }

@@ -36,5 +36,18 @@ public class AccountServiceImpl  implements IAccountService{
 		return null;
 	}
 
-	
+	public taikhoan CheckAccountAdmin(taikhoan user) {
+		String pass = user.getMatKhau();
+		user = userDao.GetAccountAdmin(user);
+		if(user != null ) {
+			if(BCrypt.checkpw(pass, user.getMatKhau())) {
+				return user;
+			}
+			else {
+				return null;
+			}	
+		}
+		return null;
+	}
+
 }

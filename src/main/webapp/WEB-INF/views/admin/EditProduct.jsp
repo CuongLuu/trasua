@@ -66,7 +66,7 @@
   <label class="col-md-4 control-label" for="singlebutton"></label>
   <div class="col-md-4">
 
-    <input class="butonlogin" type="submit" name="" value="Tạo" />
+    <input class="butonlogin" type="submit" name="" value="Lưu" />
   </div>
   </div>
     
