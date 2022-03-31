@@ -32,7 +32,7 @@
 					<c:if test="${not empty LoginInfor }">
 							<li class="nav-item dropdown"><a
 								class="nav-link dropdown-toggle" href="#" id="dropdown-a"
-								data-toggle="dropdown">${ LoginInfor.tenNguoiDung }</a>
+								data-toggle="dropdown">${LoginInfor.tenNguoiDung}</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown-a">
 									<a class="dropdown-item" href="logout">Đăng xuất</a>
 									<!-- <a class="dropdown-item" href="/blog-details.html">blog Single</a> -->

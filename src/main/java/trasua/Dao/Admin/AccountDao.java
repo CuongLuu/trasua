@@ -17,7 +17,7 @@ public class AccountDao {
 	
 	public List<taikhoan> GetDataAcc(){
 		List<taikhoan> list = new ArrayList<taikhoan>();
-		String sql = "SELECT * FROM taikhoan Where status=0";
+		String sql = "SELECT * FROM taikhoan Where status=2";
 		list = _JdbcTemplate.query(sql, new MapperTaiKhoan());
 		return list;
 	}
