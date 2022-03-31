@@ -37,4 +37,18 @@ public class ProductDao {
 		return dtf.format(now);
 	}
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+	public int edit (sanpham sp,long idProduct) {	
+		
+		String sql = "UPDATE INTO sanpham(maSanPham, maLoaiSanPham, tenSanPham, giaBan,hinhAnh,ngayTao,ngayCapNhat ) VALUES ('"
+				+ sp.getMaSanPham() + "','" + sp.getMaLoaiSanPham() + "',N'" + sp.getTenSanPham() + "','"
+				+ sp.getGiaBan() + "','" + sp.getHinhAnh()  + "' ,'" + getDateNow().toString()  + "','" + getDateNow().toString()  + "'WHERE maSanPham ='" + idProduct + "')";
+		int ins = _JdbcTemplate.update(sql.toString());
+		return ins;
+
+}
+	public void delete(int id) {
+		String sql = "DELETE FROM `sanpham` WHERE maSP = '" + id + "'";
+		_JdbcTemplate.update(sql);
+
+	}
 }

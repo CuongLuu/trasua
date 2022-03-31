@@ -12,6 +12,7 @@ import trasua.Entity.sanpham;
 public interface IHomeAdminService {
 	@Autowired
 	public int insert(sanpham sp);
-	
+	public void delete(int id);
+	public void edit(sanpham sp, long idProduct);
 	
 }
