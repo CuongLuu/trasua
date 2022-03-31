@@ -57,13 +57,13 @@
                                 <div class="media align-items-center">
                                    
                                         <span class="avatar avatar-sm rounded-circle">
-                                            <img src="">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXHVg9HLsdn_G1UHUQuR9fEphC_0Pz9TQxHA&usqp=CAU">
                                         </span>
                                         <div class="media-body  ml-2  d-none d-lg-block">
                                             <span class="mb-0 text-sm  font-weight-bold"></span>
                                         </div>
                                     
-                                        <a href="#" class="nav-item nav-link">Đăng nhập</a>
+                                        <a  class="nav-item nav-link">Xin chào Admin: <a style="color:gold;">${LoginInforAdmin.tenNguoiDung}</a></a>
                                     
                                 </div>
                             </a>
