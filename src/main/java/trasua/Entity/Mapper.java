@@ -8,13 +8,11 @@ import org.springframework.jdbc.core.RowMapper;
 public class Mapper implements RowMapper<sanpham> {
 	public sanpham mapRow(ResultSet rs, int rowNum) throws SQLException {
 		sanpham sp = new sanpham();
-		sp.setMaSanPham(rs.getInt("maSanPham"));
-		sp.setMaLoaiSanPham(rs.getInt("maLoaiSanPham"));
-		sp.setTenSanPham(rs.getString("tenSanPham"));
-		sp.setHinhAnh(rs.getString("hinhAnh"));
+		sp.setMaSanPham(rs.getInt("MaSanPham"));
+		sp.setMaLoaiSanPham(rs.getInt("MaLoaiSanPham"));
+		sp.setTenSanPham(rs.getString("TenSanPham"));
+		sp.setHinhAnh(rs.getString("HinhAnh"));
 		sp.setGiaBan(rs.getFloat("giaBan"));
-		sp.setNgayTao(rs.getDate("ngayTao"));
-		sp.setNgayCapNhat(rs.getDate("ngayCapNhat"));
 		return sp;
 	}
 }
