@@ -1,15 +1,11 @@
 package trasua.Entity;
 
-import java.sql.Date;
-
 public class sanpham {
 	private int maSanPham;
 	private int maLoaiSanPham;
 	private String tenSanPham;
 	private String hinhAnh;
 	private float giaBan;
-	private Date ngayTao;
-	private Date ngayCapNhat;
 
 	public sanpham() {
 		super();
@@ -53,22 +49,6 @@ public class sanpham {
 
 	public void setGiaBan(float giaBan) {
 		this.giaBan = giaBan;
-	}
-
-	public Date getNgayTao() {
-		return ngayTao;
-	}
-
-	public void setNgayTao(Date ngayTao) {
-		this.ngayTao = ngayTao;
-	}
-
-	public Date getNgayCapNhat() {
-		return ngayCapNhat;
-	}
-
-	public void setNgayCapNhat(Date ngayCapNhat) {
-		this.ngayCapNhat = ngayCapNhat;
 	}
 
 }

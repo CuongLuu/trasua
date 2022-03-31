@@ -39,9 +39,9 @@ public class hoadonDao extends BaseDao {
 
 	public int GetIDLastBills() {
 		StringBuffer sql = new StringBuffer();
-		sql.append("SELECT MAX(maHoaDon) FROM hoadon;");
-		
-		Integer id = _jdbcTemplate.queryForObject(sql.toString(), new Object[] {},Integer.class);
+		sql.append("SELECT MAX(id) FROM hoadon;");
+		Integer id = _jdbcTemplate.queryForObject(sql.toString(), new Object[] {}, 
+				Integer.class);
 		return id;
 	};
 

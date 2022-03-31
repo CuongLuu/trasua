@@ -1,45 +1,50 @@
 package trasua.Entity;
 
 public class hoadon {
-	private long maHoaDon;
+	private int maHoaDon;
 	private String email;
 	private String tenNguoiMua;
 	private String sdt;
 	private String diaChi;
 	private String ghiChu;
-	private long quanty;
-	private double total;
-	private int id;
+	private String ngayMua;
+	private int quanty;
+	private float total;
+	//private int id;
 	
-	public int getId() {
-		return id;
+	public String getNgayMua() {
+		return ngayMua;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setNgayMua(String ngayMua) {
+		this.ngayMua = ngayMua;
 	}
-
+	
 	public hoadon() {
-	}
-	
-	public hoadon(long maHoaDon, String email, String tenNguoiMua, String sdt, String diaChi, String ghiChu,
-			long quanty, double total, int id) {
 		super();
-		this.maHoaDon = maHoaDon;
-		this.email = email;
-		this.tenNguoiMua = tenNguoiMua;
-		this.sdt = sdt;
-		this.diaChi = diaChi;
-		this.ghiChu = ghiChu;
-		this.quanty = quanty;
-		this.total = total;
-		this.id = id;
 	}
+
+	/*
+	 * public int getId() { return id; }
+	 * 
+	 * public void setId(int id) { this.id = id; }
+	 */
+
+	/*
+	 * public hoadon() { }
+	 * 
+	 * public hoadon(int maHoaDon, String email, String tenNguoiMua, String sdt,
+	 * String diaChi, String ghiChu, String ngayMua , int quanty, float total) {
+	 * super(); this.maHoaDon = maHoaDon; this.email = email; this.tenNguoiMua =
+	 * tenNguoiMua; this.sdt = sdt; this.diaChi = diaChi; this.ghiChu = ghiChu;
+	 * this.ngayMua = ngayMua; this.quanty = quanty; this.total = total; //this.id =
+	 * id; }
+	 */
 	
-	public long getMaHoaDon() {
+	public int getMaHoaDon() {
 		return maHoaDon;
 	}
-	public void setMaHoaDon(long maHoaDon) {
+	public void setMaHoaDon(int maHoaDon) {
 		this.maHoaDon = maHoaDon;
 	}
 	public String getEmail() {
@@ -72,17 +77,17 @@ public class hoadon {
 	public void setGhiChu(String ghiChu) {
 		this.ghiChu = ghiChu;
 	}
-	public long getQuanty() {
+	public int getQuanty() {
 		return quanty;
 	}
-	public void setQuanty(long quanty) {
+	public void setQuanty(int quanty) {
 		this.quanty = quanty;
 	}
 	
-	public double getTotal() {
+	public float getTotal() {
 		return total;
 	}
-	public void setTotal(double total) {
+	public void setTotal(float total) {
 		this.total = total;
 	}
 }
