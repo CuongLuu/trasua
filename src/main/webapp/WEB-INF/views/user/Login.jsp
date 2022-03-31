@@ -9,7 +9,7 @@
 
 
 				<div class="d-flex justify-content-end social_icon" style="margin-top: 30px">
-
+<<<
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-google-plus-square"></i></span>
 					<span><i class="fab fa-twitter-square"></i></span>
@@ -17,7 +17,6 @@
 			</div>
 			<div class="card-body">
 				<form:form action="login"  method="post" modelAttribute="user">
-				 <a style="color:red;" target="blank">${Statuslogin}</a>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
